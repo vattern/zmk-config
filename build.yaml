@@ -13,7 +13,5 @@
 #
 ---
 include:
-  - board: nice_nano
-    shield: corne_left
-  - board: nice_nano
-    shield: corne_right
+  - board: hakea_left
+  - board: hakea_right
