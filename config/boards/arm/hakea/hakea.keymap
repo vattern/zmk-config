@@ -49,16 +49,16 @@
         raise_layer {
 // ------------------------------------------------------------------------------------------------------------
 // |BTCLR| BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
-// |     | INS  | PSCR | GUI   |       |      |                | PGUP |      |   ^   |      |       |       |
+// |     | INS  | PSCR | GUI   |       |      |                | PGUP | NW   |   ^   |  PW  |       |       |
 // |     | ALT  | CTRL | SHIFT |       | CAPS |                | PGDN |   <- |   v   |  ->  |  DEL  | BKSPC |
 // |     | UNDO | CUT  | COPY  | PASTE |      |      |  |      |      |      |       |      |       |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &trans    &trans    &trans   &trans    &trans  &trans
-&kp LC(LALT) &kp LEFT      &bt BT_SEL 1 &kp K_CMENU  &trans       &trans                   &kp PG_UP &trans    &kp UP   &trans    &kp N0  &trans
-&kp LC(LALT) &kp RIGHT     &kp LCTRL    &kp LSHFT    &trans       &trans                   &kp PG_DN &kp LEFT  &kp DOWN &kp RIGHT &kp DEL &kp BSPC
-&trans       &kp K_UNDO    &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans   &trans  &trans    &trans    &trans   &trans    &trans  &trans
-                           &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans    &trans   &trans
+&bt BT_CLR   &bt BT_SEL 0  &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4             &trans    &trans         &trans   &trans       &trans  &trans
+&kp LC(LALT) &kp LEFT      &bt BT_SEL 1 &kp K_CMENU  &trans       &trans                   &kp PG_UP &kp LA(LEFT)   &kp UP   kp LA(RIGHT) &kp N0  &trans
+&kp LC(LALT) &kp RIGHT     &kp LCTRL    &kp LSHFT    &trans       &trans                   &kp PG_DN &kp LEFT       &kp DOWN &kp RIGHT    &kp DEL &kp BSPC
+&trans       &kp K_UNDO    &kp K_CUT    &kp K_COPY   &kp K_PASTE  &trans  &trans   &trans  &trans    &trans         &trans   &trans       &trans  &trans
+                           &trans       &trans       &trans       &trans  &trans   &trans  &trans    &trans         &trans   &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
