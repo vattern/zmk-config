@@ -35,8 +35,8 @@
     encoder: encoder_1 {
         compatible = "alps,ec11";
         label = "ENCODER";
-        a-gpios = <&gpio0 12 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&gpio0 23 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        a-gpios = <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <2>;
     };
 
@@ -64,11 +64,11 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
         label = "KSCAN";
         diode-direction = "col2row";
         row-gpios
-            = <&gpio0 22 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio1 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            = <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio1 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio1 1  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
-            , <&gpio0 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio1 0  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 22  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
+            , <&gpio0 12  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             ;
 
     };
