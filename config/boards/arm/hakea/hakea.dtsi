@@ -1,3 +1,4 @@
+
 /*
  * Copyright (c) 2021 Thys de Wet (vattern)
  *
@@ -35,8 +36,8 @@
     encoder: encoder_1 {
         compatible = "alps,ec11";
         label = "ENCODER";
-        a-gpios = <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        a-gpios = <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         resolution = <2>;
     };
 
@@ -92,6 +93,29 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
 
 &pwm0 {
     status = "okay";
+};
+
+&i2c0 {
+  status = "okay";
+	compatible = "nordic,nrf-twi";
+	sda-pin = <21>;
+	scl-pin = <19>;
+
+  ssd1306@3c {
+      compatible = "solomon,ssd1306fb";
+      reg = <0x3c>;
+      label = "DISPLAY";
+      width = <128>;
+      height = <32>;
+      segment-offset = <0>;
+      page-offset = <0>;
+      display-offset = <0>;
+      multiplex-ratio = <31>;
+      segment-remap;
+      com-invdir;
+      com-sequential;
+      prechargep = <0x22>;
+  };
 };
 
 
