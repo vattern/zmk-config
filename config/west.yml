@@ -14,8 +14,8 @@ manifest:
       url-base: https://github.com/okke-formsma
   projects:
     - name: zmk
-      remote: zmkfirmware
-      revision: main
+      remote: petejohanson
+      revision: core/zephyr-v3.0.0-update
       import: app/west.yml
   self:
     path: config
