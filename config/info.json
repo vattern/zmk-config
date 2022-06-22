@@ -1,0 +1,66 @@
+{
+  "layouts": {
+    "LAYOUT": {
+      "layout": [
+        { "label": "Esc", "row": 0, "col": 0, "x": 0, "y": 0.93 },
+        { "label": "1", "row": 0, "col": 1, "x": 1, "y": 0.93 },
+        { "label": "2", "row": 0, "col": 2, "x": 2, "y": 0.31 },
+        { "label": "3", "row": 0, "col": 3, "x": 3, "y": 0 },
+        { "label": "4", "row": 0, "col": 4, "x": 4, "y": 0.28 },
+        { "label": "5", "row": 0, "col": 5, "x": 5, "y": 0.42 },
+        { "label": "6", "row": 0, "col": 6, "x": 9, "y": 0.42 },
+        { "label": "7", "row": 0, "col": 7, "x": 10, "y": 0.28 },
+        { "label": "8", "row": 0, "col": 8, "x": 11, "y": 0 },
+        { "label": "9", "row": 0, "col": 9, "x": 12, "y": 0.31 },
+        { "label": "0", "row": 0, "col": 10, "x": 13, "y": 0.93 },
+        { "label": "BSPC", "row": 0, "col": 11, "x": 14, "y": 0.93 },
+      
+        { "label": "Tab", "row": 1, "col": 0, "x": 0, "y": 1.93 },
+        { "label": "Q", "row": 1, "col": 1, "x": 1, "y": 1.93 },
+        { "label": "W", "row": 1, "col": 2, "x": 2, "y": 1.31 },
+        { "label": "E", "row": 1, "col": 3, "x": 3, "y": 1 },
+        { "label": "R", "row": 1, "col": 4, "x": 4, "y": 1.28 },
+        { "label": "T", "row": 1, "col": 5, "x": 5, "y": 1.42 },
+        { "label": "Y", "row": 1, "col": 6, "x": 9, "y": 1.42 },
+        { "label": "U", "row": 1, "col": 7, "x": 10, "y": 1.28 },
+        { "label": "I", "row": 1, "col": 8, "x": 11, "y": 1 },
+        { "label": "O", "row": 1, "col": 9, "x": 12, "y": 1.31 },
+        { "label": "P", "row": 1, "col": 10, "x": 13, "y": 1.93 },
+        { "label": "\\", "row": 1, "col": 11, "x": 14, "y": 1.93 },
+      
+        { "label": "Meta", "row": 2, "col": 0, "x": 0, "y": 2.93 },
+        { "label": "A", "row": 2, "col": 1, "x": 1, "y": 2.93 },
+        { "label": "S", "row": 2, "col": 2, "x": 2, "y": 2.31 },
+        { "label": "D", "row": 2, "col": 3, "x": 3, "y": 2 },
+        { "label": "F", "row": 2, "col": 4, "x": 4, "y": 2.28 },
+        { "label": "G", "row": 2, "col": 5, "x": 5, "y": 2.42 },
+        { "label": "H", "row": 2, "col": 6, "x": 9, "y": 2.42 },
+        { "label": "J", "row": 2, "col": 7, "x": 10, "y": 2.28 },
+        { "label": "K", "row": 2, "col": 8, "x": 11, "y": 2 },
+        { "label": "L", "row": 2, "col": 9, "x": 12, "y": 2.31 },
+        { "label": ";", "row": 2, "col": 10, "x": 13, "y": 2.93 },
+        { "label": "'", "row": 2, "col": 11, "x": 14, "y": 2.93 },
+      
+        { "label": "LShift", "row": 3, "col": 0, "x": 0, "y": 3.93 },
+        { "label": "Z", "row": 3, "col": 1, "x": 1, "y": 3.93 },
+        { "label": "X", "row": 3, "col": 2, "x": 2, "y": 3.31 },
+        { "label": "C", "row": 3, "col": 3, "x": 3, "y": 3 },
+        { "label": "V", "row": 3, "col": 4, "x": 4, "y": 3.28 },
+        { "label": "B", "row": 3, "col": 5, "x": 5, "y": 3.42 },
+        { "label": "N", "row": 3, "col": 6, "x": 9, "y": 3.42 },
+        { "label": "M", "row": 3, "col": 7, "x": 10, "y": 3.28 },
+        { "label": ",", "row": 3, "col": 8, "x": 11, "y": 3 },
+        { "label": ".", "row": 3, "col": 9, "x": 12, "y": 3.31 },
+        { "label": "/", "row": 3, "col": 10, "x": 13, "y": 3.93 },
+        { "label": "RShift", "row": 3, "col": 11, "x": 14, "y": 3.93 },
+      
+        { "label": "Ctrl", "row": 4, "col": 3, "x": 4, "y": 4.31 },
+        { "label": "LSpace", "row": 4, "col": 4, "x": 5, "y": 4.42},
+        { "label": "Raise", "row": 4, "col": 5, "x": 6, "y": 4.42},
+        { "label": "Lower", "row": 4, "col": 6, "x": 8, "y": 4.42},
+        { "label": "RSpace", "row": 4, "col": 7, "x": 9, "y": 4.42},
+        { "label": "Alt", "row": 4, "col": 8, "x": 10, "y": 4.31 }
+      ]
+    }
+  }
+}
