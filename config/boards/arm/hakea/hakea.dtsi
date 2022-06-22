@@ -36,19 +36,8 @@
     		init-delay-ms = <50>;
     	};
 
-    sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&encoder>;
-    };
 
-    // Override gpios config in board revision if required
-    encoder: encoder_1 {
-        compatible = "alps,ec11";
-        label = "ENCODER";
-        a-gpios = <&gpio0 7 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        b-gpios = <&gpio0 9 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <2>;
-    };
+
 
 
     default_transform: keymap_transform_0 {
