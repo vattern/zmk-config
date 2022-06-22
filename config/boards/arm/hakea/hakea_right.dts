@@ -21,12 +21,6 @@ leds {
   };
 };
 
-ext-power {
-    compatible = "zmk,ext-power-generic";
-    label = "EXT_POWER";
-    control-gpios = <&gpio1 10 GPIO_ACTIVE_HIGH>;
-    init-delay-ms = <50>;
-  };
 
     kscan0: kscan {
         col-gpios
