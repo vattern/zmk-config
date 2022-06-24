@@ -1,0 +1,2 @@
+/home/thys/zmk/app/boards/arm/chockea/build/CMakeFiles/rebuild_cache.dir
+/home/thys/zmk/app/boards/arm/chockea/build/CMakeFiles/edit_cache.dir
