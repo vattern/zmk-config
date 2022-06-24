@@ -15,3 +15,5 @@
 include:
   - board: scylla_left
   - board: scylla_right
+  - board: hakea_left
+  - board: hakea_right
