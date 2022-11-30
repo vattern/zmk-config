@@ -66,7 +66,10 @@ RC(3,0) RC(3,1) RC(3,2) RC(3,3) RC(3,4) RC(3,5) RC(4,5) RC(4,6) RC(3,6) RC(3,7) 
     kscan0: kscan {
         compatible = "zmk,kscan-gpio-matrix";
         label = "KSCAN";
+	debounce-press-ms = <8>;
+        debounce-release-ms = <8>;
         diode-direction = "col2row";
+	
         row-gpios
             = <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
             , <&gpio1 3  (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
