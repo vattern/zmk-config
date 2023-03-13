@@ -3,17 +3,19 @@
 
 if BOARD_SCYLLA_LEFT
 
-config ZMK_SPLIT_BLE_ROLE_CENTRAL
-	default y
-
-endif # BOARD_SCYLLA_LEFT
-
-
-config ZMK_SPLIT
+config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
 config ZMK_KEYBOARD_NAME
 	default "scylla"
+
+endif # BOARD_v_LEFT
+
+
+if BOARD_SCYLLA_LEFT || BOARD_SCYLLA_RIGHT
+
+config ZMK_SPLIT
+	default y
 
 if USB
 
@@ -45,6 +47,7 @@ config ZMK_DISPLAY
 
 choice ZMK_DISPLAY_STATUS_SCREEN
         default ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
+
 endchoice
 
 if ZMK_DISPLAY
@@ -88,3 +91,5 @@ choice LVGL_COLOR_DEPTH
 endchoice
 
 endif #ZMK_DISPLAY
+
+endif # BOARD_SCYLLA_LEFT || BOARD_SCYLLA_RIGHT
