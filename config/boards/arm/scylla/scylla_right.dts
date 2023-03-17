@@ -7,11 +7,11 @@
 /dts-v1/;
 #include <nordic/nrf52840_qiaa.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <dt-bindings/led/led.h>
 #include "scylla.dtsi"
 &default_transform {
   col-offset = <6>;
 };
-
 / {
 leds {
   compatible = "gpio-leds";
@@ -20,8 +20,6 @@ leds {
     label = "Blue LED";
   };
 };
-
-
 kscan0: kscan {
   col-gpios
       = <&gpio1 4   (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
@@ -39,4 +37,30 @@ kscan0: kscan {
       , <&gpio1 10  GPIO_ACTIVE_HIGH>
       ;
     };
+};
+
+&spi1 {
+  compatible = "nordic,nrf-spim";
+  status = "okay";
+  mosi-pin = <22>;
+  // Unused pins, needed for SPI definition, but not used by the ws2812 driver itself.
+  sck-pin = <31>;
+  miso-pin = <30>;
+
+  led_strip: ws2812@0 {
+    compatible = "worldsemi,ws2812-spi";
+    label = "WS2812";
+
+    /* SPI */
+    reg = <0>; /* ignored, but necessary for SPI bindings */
+    spi-max-frequency = <4000000>;
+
+    /* WS2812 */
+    chain-length = <29>; /* number of LEDs */
+    spi-one-frame = <0x70>;
+    spi-zero-frame = <0x40>;
+    color-mapping = <LED_COLOR_ID_GREEN
+                          LED_COLOR_ID_RED
+                          LED_COLOR_ID_BLUE>;
+  };
 };

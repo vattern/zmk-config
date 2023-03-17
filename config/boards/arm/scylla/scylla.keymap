@@ -4,6 +4,9 @@
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
+#define DEFAULT 0
+#define LOWER   1
+#define RAISE   2
 
 / {
     keymap {
@@ -28,10 +31,9 @@
 
 
         };
-
+    
         lower_layer {
         label = "lwr";
-// TODO: Some binds are waiting for shifted keycode support.
 // ------------------------------------------------------------------------------------------------------------
 // |       |  F1 |  F2 |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
 // | `     |   1 |   2 |   3  |   4  |   5  |                   |   6  |   7   |   8   |   9  |    0  |  F12  |

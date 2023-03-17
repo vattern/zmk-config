@@ -9,13 +9,17 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_KEYBOARD_NAME
 	default "scylla"
 
-endif # BOARD_v_LEFT
+endif # BOARD_SCYLLA_LEFT
 
 
 if BOARD_SCYLLA_LEFT || BOARD_SCYLLA_RIGHT
 
 config ZMK_SPLIT
 	default y
+
+config SPI
+    bool
+    default y        
 
 if USB
 
