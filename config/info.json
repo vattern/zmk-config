@@ -52,7 +52,7 @@
         { "label": "B", "row": 3, "col": 5, "x": 5, "y": 3.42 },
         { "label": "ROLLERA", "row": 3, "col": 6, "x": 6, "y": 3.42 },
 
-        { "label": "ENCODERB", "row": 3, "col": 7, "x": 7, "y": 3.42 },
+        { "label": "ENCODERB", "row": 3, "col": 7, "x": 8, "y": 3.42 },
         { "label": "N", "row": 3, "col": 8, "x": 9, "y": 3.42 },
         { "label": "M", "row": 3, "col": 9, "x": 10, "y": 3.28 },
         { "label": ",", "row": 3, "col": 10, "x": 11, "y": 3 },
