@@ -55,14 +55,14 @@
         { "label": "RShift", "row": 3, "col": 11, "x": 14, "y": 3.93 },
 
         { "label": "OS", "row": 4, "col": 1, "x": 2, "y": 4.31 },
-        { "label": "LAlt", "row": 4, "col": 2, "x": 3, "y": 4.42},
+        { "label": "LAlt", "row": 4, "col": 2, "x": 3, "y": 4.12},
         { "label": "LCtrl", "row": 4, "col": 3, "x": 4, "y": 4.31 },
         { "label": "Raise", "row": 4, "col": 4, "x": 5, "y": 4.42},
         { "label": "Space", "row": 4, "col": 5, "x": 6, "y": 4.42},
         { "label": "Enter", "row": 4, "col": 6, "x": 8, "y": 4.42},
         { "label": "Lower", "row": 4, "col": 7, "x": 9, "y": 4.42},
         { "label": "RCtrl", "row": 4, "col": 8, "x": 10, "y": 4.31 },
-        { "label": "RAlt", "row": 4, "col": 9, "x": 11, "y": 4.42},
+        { "label": "RAlt", "row": 4, "col": 9, "x": 11, "y": 4.12},
         { "label": "Menu", "row": 4, "col": 10, "x": 12, "y": 4.31 }
       ]
     }
