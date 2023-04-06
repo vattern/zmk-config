@@ -40,10 +40,10 @@ config ZMK_BATTERY_VOLTAGE_DIVIDER
 	default y
 
 config ZMK_DISPLAY
-        select LVGL_USE_CONT
-        select LVGL_USE_LABEL
-        select LVGL_USE_IMG
-        select LVGL_FONT_MONTSERRAT_26
+        select LV_USE_CONT
+        select LV_USE_LABEL
+        select LV_USE_IMG
+        select LV_FONT_MONTSERRAT_26
 
 choice ZMK_DISPLAY_STATUS_SCREEN
         default ZMK_DISPLAY_STATUS_SCREEN_CUSTOM
@@ -60,34 +60,34 @@ config JD79653
         default y
 
 
-choice LVGL_THEME_DEFAULT_FONT_NORMAL
-    default LVGL_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_26
+choice LV_THEME_DEFAULT_FONT_NORMAL
+    default LV_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_26
 
 endchoice
 
-choice LVGL_THEME_DEFAULT_FONT_SMALL
-    default LVGL_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_26
+choice LV_THEME_DEFAULT_FONT_SMALL
+    default LV_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_26
 
 endchoice
 
 
-config LVGL_HOR_RES_MAX
+config LV_HOR_RES_MAX
         default 200
 
-config LVGL_VER_RES_MAX
+config LV_VER_RES_MAX
         default 200
 
-config LVGL_DPI
+config LV_DPI_DEF
         default 184
 
-config LVGL_BITS_PER_PIXEL
+config LV_BITS_PER_PIXEL
         default 1
 
-config LVGL_VDB_SIZE
+config LV_Z_VDB_SIZE
         default 100
 
-choice LVGL_COLOR_DEPTH
-        default LVGL_COLOR_DEPTH_1
+choice LV_COLOR_DEPTH
+        default LV_COLOR_DEPTH_1
 endchoice
 
 endif #ZMK_DISPLAY
