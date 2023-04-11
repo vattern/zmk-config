@@ -52,44 +52,33 @@ endchoice
 
 if ZMK_DISPLAY
 
-config SPI
-        default y
+config I2C
+	default y
 
-config JD79653
-        bool
-        default y
+config SSD1306
+	default y
 
+config SSD1306_REVERSE_MODE
+	default y
 
-choice LV_THEME_DEFAULT_FONT_NORMAL
-    default LV_THEME_DEFAULT_FONT_NORMAL_MONTSERRAT_26
+endif # ZMK_DISPLAY
 
-endchoice
-
-choice LV_THEME_DEFAULT_FONT_SMALL
-    default LV_THEME_DEFAULT_FONT_SMALL_MONTSERRAT_26
-
-endchoice
-
-
-config LV_HOR_RES_MAX
-        default 200
-
-config LV_VER_RES_MAX
-        default 200
-
-config LV_DPI_DEF
-        default 184
-
-config LV_BITS_PER_PIXEL
-        default 1
+if LVGL
 
 config LV_Z_VDB_SIZE
-        default 100
+	default 64
+
+config LV_Z_DPI
+	default 148
+
+config LV_Z_BITS_PER_PIXEL
+	default 1
 
 choice LV_COLOR_DEPTH
-        default LV_COLOR_DEPTH_1
+	default LV_COLOR_DEPTH_1
 endchoice
 
-endif #ZMK_DISPLAY
+endif # LVGL
+
 
 endif # BOARD_HAKEA_LEFT || BOARD_HAKEA_RIGHT
