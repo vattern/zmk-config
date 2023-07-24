@@ -7,7 +7,7 @@
 
 #include <nordic/nrf52840_qiaa.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
-#include <hakea_pinctrl.dtsi>
+#include hakea_pinctrl.dtsi
 / {
     model = "HAKEA";
     compatible = "hakea";
