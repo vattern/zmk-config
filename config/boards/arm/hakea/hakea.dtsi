@@ -32,7 +32,8 @@
 
     sensors {
         compatible = "zmk,keymap-sensors";
-        sensors = <&encoder>;
+        sensors = <&encoder &encoder_1>;
+        triggers-per-rotation = <20>;
     };
 
     // Override gpios config in board revision if required
@@ -41,7 +42,7 @@
         label = "ENCODER";
         a-gpios = <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        resolution = <2>;
+        steps = <80>;
     };
 
 
