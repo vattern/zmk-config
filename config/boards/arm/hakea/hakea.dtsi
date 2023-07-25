@@ -30,19 +30,28 @@
   		full-ohms = <(2000000 + 806000)>;
   	};
 
-    sensors {
-        compatible = "zmk,keymap-sensors";
-        sensors = <&encoder>;
-        triggers-per-rotation = <20>;
+  	left_encoder: encoder_left {
+        compatible = "alps,ec11";
+        label = "LEFT_ENCODER";
+        a-gpios = <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <60>;
+        status = "disabled";
     };
 
-    // Override gpios config in board revision if required
-    encoder: encoder_1 {
+    right_encoder: encoder_right {
         compatible = "alps,ec11";
-        label = "ENCODER";
+        label = "RIGHT_ENCODER";
         a-gpios = <&gpio0 3 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         b-gpios = <&gpio0 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
-        steps = <80>;
+        steps = <60>;
+        status = "disabled";
+    };
+
+    sensors {
+            compatible = "zmk,keymap-sensors";
+            sensors = <&left_encoder &right_encoder>;
+            triggers-per-rotation = <30>;
     };
 
 
