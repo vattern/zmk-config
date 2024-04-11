@@ -9,6 +9,9 @@ config ZMK_SPLIT_ROLE_CENTRAL
 config ZMK_KEYBOARD_NAME
 	default "hakea"
 
+config ZMK_USB
+	default y
+
 endif # BOARD_v_LEFT
 
 
@@ -33,8 +36,7 @@ config BT_CTLR
 config ZMK_BLE
 	default y
 
-config ZMK_USB
-	default y
+
 
 config ZMK_BATTERY_VOLTAGE_DIVIDER
 	default y
