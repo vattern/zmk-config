@@ -2,3 +2,6 @@
 include:
   - board: hakea_left
   - board: hakea_right
+  - board: hakea_dongle
+  - board: hakea_right
+    shield: settings_reset
