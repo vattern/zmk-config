@@ -38,9 +38,6 @@
     status = "okay";
 };
 
-&pwm0 {
-    status = "okay";
-};
 
 &left_encoder {
     status = "okay";
