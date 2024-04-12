@@ -1,5 +1,5 @@
-identifier: hakea
-name: Hakea
+identifier: nurgle
+name: Nurgle
 type: mcu
 arch: arm
 toolchain:

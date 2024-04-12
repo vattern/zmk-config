@@ -4,17 +4,17 @@
 
 
 config BOARD_HAKEA
-	bool "hakea"
+	bool "nurgle"
 	depends on SOC_NRF52840_QIAA
 
 config BOARD_HAKEA_LEFT
-	bool "hakea"
+	bool "nurgle"
 	depends on SOC_NRF52840_QIAA
 
 config BOARD_HAKEA_RIGHT
-	bool "hakea"
+	bool "nurgle"
 	depends on SOC_NRF52840_QIAA
 
 config BOARD_HAKEA_DONGLE
-	bool "hakea"
+	bool "nurgle"
 	depends on SOC_NRF52840_QIAA

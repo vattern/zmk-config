@@ -7,8 +7,8 @@
 #include <nordic/nrf52840_qiaa.dtsi>
 #include <dt-bindings/zmk/matrix_transform.h>
 / {
-    model = "HAKEA";
-    compatible = "hakea";
+    model = "NURGLE";
+    compatible = "nurgle";
 
     chosen {
         zephyr,code-partition = &code_partition;

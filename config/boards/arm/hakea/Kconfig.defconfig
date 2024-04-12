@@ -6,16 +6,16 @@ if BOARD_HAKEA_DONGLE
 config ZMK_SPLIT_ROLE_CENTRAL
 	default y
 
-config ZMK_KEYBOARD_NAME
-	default "hakea"
-
 config ZMK_USB
 	default y
 
 endif # BOARD_v_DONGLE
 
 
-if BOARD_HAKEA_LEFT || BOARD_HAKEA_RIGHT
+if BOARD_HAKEA_LEFT || BOARD_HAKEA_RIGHT || BOARD_HAKEA_DONGLE
+
+config ZMK_KEYBOARD_NAME
+	default "nurgle"
 
 config ZMK_SPLIT
 	default y
@@ -80,4 +80,4 @@ endchoice
 endif # LVGL
 
 
-endif # BOARD_HAKEA_LEFT || BOARD_HAKEA_RIGHT
+endif # BOARD_HAKEA_LEFT || BOARD_HAKEA_RIGHT || BOARD_HAKEA_DONGLE
